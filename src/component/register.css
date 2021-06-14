@@ -1,0 +1,129 @@
+.register {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+}
+
+.registerTitle {
+  font-size: 50px;
+}
+
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.registerLoginButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: lightcoral;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+  zoom: 1;
+}
+
+row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+.span-1-of-3 {
+  width: 32.26%;
+}
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.span-2-of-3 {
+  width: 66.13%;
+}
+
+.btn-full:hover, .btn-full:active, input[type=submit] {
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+.btn-full:link, .btn-full:visited, input[type=submit] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+.btn:link, .btn:visited, input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s,color 0.2s,border 0.2s;
+  margin-right: 15px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input {
+  line-height: normal;
+}
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
